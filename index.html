@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+  <title>flower website design</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" name="" id="toggler" />
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="log" class="logo"><img src="logo.image.jpg" height="50px" width="150px" /></a>
+    <nav class="navbar">
+      <a onclick="goToAll()" href="#home">home</a>
+      <a onclick="goToAll()" href="#about">about</a>
+      <a onclick="goToAll()" href="#product">products</a>
+      <a onclick="goToAll()" href="contact.html">review</a>
+      <a onclick="goToAll()" href="contact.html">contact</a>
+      <span class="close-btn">&times;</span>
+    </nav>
+
+    <div class="icons">
+      <a onclick="goToWishList()" class="fas fa-heart"></a>
+      <a onclick="goToCart()" class="fas fa-shopping-cart"><span class="count" id="cartCount"></span></a>
+      <a href="#" class="fas fa-user"></a>
+    </div>
+  </header>
+  <section id="all-section" class="all-section">
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Fresh Flowers</h3>
+        <span>Natural & beautiful Flowers</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          laborum ut minus corrupti dolorum dolore assumenda iste voluptate
+          dolorem pariatur.
+        </p>
+        <!-- <a href="#" class="btn">shop now</a> -->
+      </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about </span>us</h1>
+
+      <div class="row">
+        <!-- video -->
+        <div class="video_container">
+          <video src="video.mp4" loop autoplay muted></video>
+          <h3>best flower sellers</h3>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+          <h3>why choose us?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            porro alias, quo consequuntur corrupti saepe quod cupiditate,
+            provident minima, eveniet quas omnis ducimus quibusdam incidunt
+            laboriosam eum? Blanditiis, ipsum ea.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni a
+            eius tempore? Ullam odit quo similique mollitia. Assumenda, fuga
+            nihil quod iure reprehenderit, facilis exercitationem delectus
+            obcaecati est voluptas nisi!
+          </p>
+          <br />
+          <!-- <a href="#" class="btn">learn more</a> -->
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- /* icons section start */ -->
+    <section class="icons_container">
+      <!-- icons-1 -->
+      <div class="icons">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="info">
+          <h3>free delivery</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+
+      <!-- icons-2 -->
+      <div class="icons">
+        <i class="fa-solid fa-sack-dollar"></i>
+        <div class="info">
+          <h3>14 days returns</h3>
+          <span>moneyback guarantee</span>
+        </div>
+      </div>
+
+      <!-- icons-3 -->
+      <div class="icons">
+        <i class="fa-solid fa-gift"></i>
+        <div class="info">
+          <h3>offer & gifts</h3>
+          <span>on all orders</span>
+        </div>
+      </div>
+
+      <!-- icons-4 -->
+      <div class="icons">
+        <i class="fa-solid fa-money-check-dollar"></i>
+        <div class="info">
+          <h3>secure payment</h3>
+          <span>protected by paypal</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="product">
+      <h1 class="heading">latest <span>products</span></h1>
+      <!-- products -->
+      <div class="card_container" id="cardContainer"></div>
+    </section>
+  
+  <section class="footer">
+      <div class="box-container">
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Review</a>
+          <a href="#">Contact us </a>
+        </div>
+        <div class="box">
+          <h3>Extra links</h3>
+          <a href="#">My Account</a>
+          <a href="#">My order</a>
+          <a href="#">My favourite</a>
+
+        </div>
+        <div class="box">
+          <h3>Location</h3>
+          <a href="#">INDIA</a>
+          <a href="#">USA</a>
+          <a href="#">UK</a>
+
+        </div>
+        <div class="box">
+          <h3>Contact info</h3>
+          <a href="#"><i class="fa fa-phone"></i> +919000768576</a>
+          <a href="#"><i class="fa fa-envelope"></i> flowersmerchant@gmail.com</a>
+          <a href="#"><i class="fa fa-map-marker"></i> Bangalore, India -560001</a>
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div class="credit"> Created by<span>Web Developers</span>|all rights reserved</div>
+    </section>
+    </section>
+  </div>
+  
+  <div id="cart-section" class="container main-section cart-section">
+    <div class="sidebar">
+      <div class="head">My<span> Cart</span></div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">$ 0.00</h2>
+      </div>
+    </div>
+  </div>
+  <div id="wishlist-section" class="container main-section cart-section">
+    <div class="sidebar">
+      <div class="head">
+        <p>My Wishlist</p>
+      </div>
+      <div id="wishItem">Your Wishlist is empty</div>
+    </div>
+    
+  <script src="main.js"></script>
+  <script src="demo.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    document
+      .querySelector(".close-btn")
+      .addEventListener("click", function () {
+        document.getElementById("toggler").checked = false;
+      });
+  </script>
+</body>
+
+</html>

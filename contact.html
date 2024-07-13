@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Slider</title>
+    <!-- Linking Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="log" class="logo"
+          ><img src="logo.image.jpg" height="50px" width="150px"
+        /></a>
+        <nav class="navbar">
+          <a onclick="goToAll()" href="index.html">home</a>
+          <a onclick="goToAll()" href="index.html">about</a>
+          <a onclick="goToAll()" href="index.html">products</a>
+          <a onclick="goToAll()" href="contact.html">review</a>
+          <a onclick="goToAll()" href="contact.html">contact</a>
+          <span class="close-btn">&times;</span>
+        </nav>
+  
+        <div class="icons">
+          <a onclick="goToWishList()" class="fas fa-heart"></a>
+          <a onclick="goToCart()" class="fas fa-shopping-cart"
+            ><span class="count" id="cartCount"></span
+          ></a>
+          <a href="#" class="fas fa-user"></a>
+        </div>
+      </header>
+    <div class="container1">
+        <h1 class="heading1">Customer Reviews</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-1.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">JAMES</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>I found the products to be of great quality and the prices were very reasonable. The customer service was also excellent, and they responded to my inquiries promptly. Overall, I am very satisfied with my purchase and would definitely recommend this store to others.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-2.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">ANNA</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>The service I received was outstanding! The staff was very friendly and helpful, and the products exceeded my expectations. I particularly liked the wide variety of items available. I will definitely be a returning customer.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-3.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">MICHAEL</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>I am very impressed with the quality of the products I received. They are exactly as described and the shipping was very fast. I will definitely be making more purchases in the future and highly recommend this store to others.</p>
+                        <div class="rating">
+                            <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-4.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">SARAH</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>I am very satisfied with my purchase. The product quality is excellent and the prices are very affordable. The customer service team was also very helpful and responsive. I would definitely recommend this store to my friends and family.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-5.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">DAVID</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>The delivery was very fast and the products were well-packaged. I am very happy with my purchase and the customer support was excellent. They answered all my questions and provided great assistance throughout the process.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                                     
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card-item">
+                    <div class="user_info">
+                        <img src="img-6.jpg" alt="user image" class="user_image">
+                        <h2 class="user_name">EMILY</h2>
+                    </div>
+                    <div class="review_content">
+                        <p>I am very happy with my purchase and will definitely recommend this store to my friends. The product quality is excellent and the customer service is top-notch. I will definitely be shopping here again in the future.</p>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <h2>Contact Us</h2>
+    <div class="container contact-container">
+        <div class="form-container">
+           
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="flowercon.jpg" alt="Contact Image">
+        </div>
+    </div>
+     
+    
+    <!--footer new-->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Review</a>
+                <a href="#">Contact us </a>
+            </div>
+            <div class="box">
+                <h3>Extra links</h3>
+                <a href="#">My Account</a>
+                <a href="#">My order</a>
+                <a href="#">My favourite</a>
+                
+            </div>
+            <div class="box">
+                <h3>Location</h3>
+                <a href="#">INDIA</a>
+                <a href="#">USA</a>
+                <a href="#">UK</a>
+                
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#"><i class="fa fa-phone"></i> +919000768576</a>
+                <a href="#"><i class="fa fa-envelope"></i> flowersmerchant@gmail.com</a>
+                <a href="#"><i class="fa fa-map-marker"></i> Bangalore, India -560001</a>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="credit"> Created by<span>Web Developers</span>|all rights reserved</div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
